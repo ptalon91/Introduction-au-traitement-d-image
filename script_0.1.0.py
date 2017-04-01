@@ -1,5 +1,5 @@
 from PIL import Image, ImageStat
-from pylab import imshow, show, close
+from pylab import *
 
 # Parameters...
 image_file_name = "2614_1178_10cm_example.tif"
@@ -9,7 +9,7 @@ def main():
     """Main program"""
 
     # Open image and assign it to a var.
-    img = Image.open(image_file_name)
+    img = Image.open(image_file_name) #.crop((600, 600, 800, 900))   
 
     # Print image infos.
     print "Format:", img.format, ", Taille:", img.size, ", Mode:", img.mode
@@ -27,16 +27,15 @@ def main():
     print img_stat.median
     print img_stat.stddev
     
-    img_grey = img.convert("L")
+    
+    img_grey = array(img.convert("L"))
+    
+    flatten_img_grey = [y for x in img_grey for y in x]
     
     figure()
-    hist(img.flatten())
+    hist(flatten_img_grey, 255)
     show()
-    #img_histo = img.histogram()
     
-    print img_histo
-    
-    #imshow(img)
     #show()
     #identified = raw_input('Please press a key')
     #close()
