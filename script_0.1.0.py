@@ -27,7 +27,12 @@ def main():
     print img_stat.median
     print img_stat.stddev
     
-    img_histo = img.histogram()
+    img_grey = img.convert("L")
+    
+    figure()
+    hist(img.flatten())
+    show()
+    #img_histo = img.histogram()
     
     print img_histo
     
