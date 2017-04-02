@@ -27,6 +27,7 @@ K-means:
     Première classification non supervisée, et par pixel (module scipy.cluster.vq): K-means.
     Cette méthode permet de classifier chaque pixel dans un nombre de groupes définit par l'utilisateur.
     Observations: Effet "poivre sel". Les objets ne sont pas très bien définis.
+    Essai avec filtre médian: pas beaucoup de différences.
     
     
 

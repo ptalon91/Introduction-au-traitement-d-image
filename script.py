@@ -1,5 +1,5 @@
 '''Ver 0.2.0'''
-from PIL import Image, ImageStat
+from PIL import Image, ImageStat, ImageFilter
 from pylab import *
 from scipy.cluster.vq import *
 from scipy.misc import imresize
@@ -13,7 +13,9 @@ def main():
 
     # Open image and assign it to a var.
     img = Image.open(image_file_name) #.crop((600, 600, 800, 900))   
-
+    
+    img_filtered = img.filter(ImageFilter.MedianFilter)
+    
     # Print image infos.
     print "Format:", img.format, ", Taille:", img.size, ", Mode:", img.mode
 
@@ -30,7 +32,7 @@ def main():
     # The following lines are for image classification using K-means...
     # compute color features for each region
     
-    img_array = array(img)
+    img_array = array(img_filtered)
     
     steps = 1000
     dx = img_array.shape[0] / steps
