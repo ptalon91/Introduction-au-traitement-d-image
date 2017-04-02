@@ -5,7 +5,7 @@ from scipy.cluster.vq import *
 from scipy.misc import imresize
 
 # Parameters...
-image_file_name = "2614_1178_10cm_example.tif"
+image_file_name = "data/2614_1178_10cm_example.tif"
 
 
 def main():
