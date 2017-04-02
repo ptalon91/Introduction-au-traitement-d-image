@@ -1,7 +1,7 @@
 # Introduction-au-traitement-d-image
 Projet du cours "Introduction au traitement d'image" du printemps 2017
 
-Introduction
+# Introduction
 
 L'objectif de ce projet est de développer un programme en python qui permet l'analyse d'images satellites.
 
@@ -12,7 +12,7 @@ Dans un deuxième temps, ce programme devra permettre la classification des pixe
 La méthode doit encore être déterminée; Analyse d'image supervisée ? non supervisée ? basée objets ? Toutes puis comparaison des méthodes?
 
 
-Statistiques descriptives
+# Statistiques descriptives
 
 Lorsqu'on lui donne une image en argument, le programme retourne quelques statistiques descriptives (module ImageStat):
 - Valeurs max et min des pixels (RGB -> 6 valeurs)
@@ -21,7 +21,7 @@ Lorsqu'on lui donne une image en argument, le programme retourne quelques statis
 - Valeurs médiane des pixels (RGB -> 3 valeurs)
 - L'écart type (RGB -> 3 valeurs)
 
-Classification des pixels
+# Classification des pixels
 
     K-means
     Première classification non supervisée, et par pixel (module scipy.cluster.vq): K-means.
