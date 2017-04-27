@@ -47,7 +47,7 @@ def main():
             features.append([R,G,B])
     features = array(features,'f') # make into array
     # cluster
-    centroids,variance = kmeans(features,6)
+    centroids,variance = kmeans(features,20)
     code,distance = vq(features,centroids)
     # create image with cluster labels
     codeim = code.reshape(steps,steps)

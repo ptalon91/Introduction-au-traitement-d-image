@@ -28,7 +28,12 @@ K-means:
     Cette méthode permet de classifier chaque pixel dans un nombre de groupes définit par l'utilisateur.
     Observations: Effet "poivre sel". Les objets ne sont pas très bien définis.
     Essai avec filtre médian: pas beaucoup de différences.
-    
+
+Python for geospatial data processing:
+https://www.machinalis.com/blog/python-for-geospatial-data-processing/
+
+Python for Object Based Image Analysis (OBIA):
+https://www.machinalis.com/blog/obia/
     
 
 
